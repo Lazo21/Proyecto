@@ -62,6 +62,9 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Producto.sql" />
-    <Build Include="dbo\Store Procedures\EmpleadoInsertar.sql" />
+    <Build Include="dbo\Store Procedures\ProductoInsertar.sql" />
+    <Build Include="dbo\Store Procedures\ProductoActualizar.sql" />
+    <Build Include="dbo\Store Procedures\ProductoEliminar.sql" />
+    <Build Include="dbo\Store Procedures\ProductoObtener.sql" />
   </ItemGroup>
 </Project>
