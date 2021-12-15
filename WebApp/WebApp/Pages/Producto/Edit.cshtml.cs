@@ -24,7 +24,7 @@ namespace WebApp.Pages.Producto
         [BindProperty(SupportsGet =true)]
         public int? id { get; set; }
 
-        public async Task<AcceptedResult> OnGet()
+        public async Task<IActionResult> OnGet()
         {
             try
             {
@@ -39,7 +39,7 @@ namespace WebApp.Pages.Producto
             catch (Exception ex)
             {
 
-                return Content(ex.Message);
+                return Content(    ex.Message);
             }
 
 

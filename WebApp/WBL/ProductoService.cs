@@ -15,6 +15,7 @@ namespace WBL
         Task<IEnumerable<ProductoEntity>> Get();
         Task<ProductoEntity> GetById(ProductoEntity entity);
         Task<DBEntity> Update(ProductoEntity entity);
+        Task<IEnumerable<ProductoEntity>> GetLista();
     }
 
     public class ProductoService : IProductoService
@@ -46,6 +47,23 @@ namespace WBL
                 throw;
             }
 
+        }
+
+
+        public async Task<IEnumerable<ProductoEntity>> GetLista()
+        {
+
+            try
+            {
+                var result = sql.QueryAsync<ProductoEntity>("dbo.ProductoLista");
+
+                return await result;
+            }
+            catch (Exception EX)
+            {
+
+                throw;
+            }
         }
 
 
