@@ -35,7 +35,7 @@ text-align: top;
 
 
 <!-- data-bs-spy="scroll" data-bs-target=".card-body" data-bs-offset="50" -->
-<center><div class="col-md-4" >
+<div class="col-md-4 content-center" >
 <br><br><br><br>   
 <center><h2>Control de Pacientes</h2></center>
     <form action="" method="post" >
@@ -120,7 +120,7 @@ text-align: top;
                 </div>
 
                 <div class="mb-3">
-                    <label for="" class="form-label">¿Como me contacto?</label>
+                    <label for="" class="form-label">¿Como me contactó?</label>
                     <select class="form-select form-select" name="contacto" id="contacto">
                         <option selected>Seleccione uno</option>
                         <option value="">Redes Sociales</option>
@@ -164,7 +164,7 @@ text-align: top;
     </form>
 
 
-</div></center>
+</div>
 
 <!-- <div class="container">
     <div class="col-md-9">
