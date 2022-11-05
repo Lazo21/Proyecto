@@ -35,7 +35,7 @@ text-align: top;
 
 
 <!-- data-bs-spy="scroll" data-bs-target=".card-body" data-bs-offset="50" -->
-<div class="col-md-4 content-center" >
+<div class="col-md-3" >
 <br><br><br><br>   
 <center><h2>Control de Pacientes</h2></center>
     <form action="" method="post" >
@@ -64,7 +64,7 @@ text-align: top;
 
                 <div class="mb-3">
                     <label for="Cedula" class="form-label">Cédula</label>
-                    <input type="text" class="form-control" name="Cedula" id="Cedula" aria-describedby="helpId" placeholder="">
+                    <input type="number"  max="15" min="9" class="form-control" name="Cedula" id="Cedula" aria-describedby="helpId" placeholder="" >
                 </div>
 
                 <label for="estado" class="form-label"> Estado del Paciente: </label>
@@ -166,8 +166,8 @@ text-align: top;
 
 </div>
 
-<!-- <div class="container">
-    <div class="col-md-9">
+
+    <!-- <div class="col-md-9">
         
         
             <img src="../img/logo8.png"/ width="300" height="300" margin="auto" padding="800">
@@ -175,20 +175,19 @@ text-align: top;
 
 
        
-    </div>
-
-
-</div> -->
+    </div> -->
 
 
 
-<div class="col-md-12">
+
+
+<div class="col-md-9">
 <br><br><br><br> 
 <center><h2>Registros de Pacientes mayores de edad</h2></center>
 
        <!-- style= "width:max-content"; -->
     <div class="table-responsive">
-        <table class="table" id="tabla"  style="width: max-top;">       
+        <table class="table" id="tabla"  style="width: top;">       
             <thead class="table table-striped">
                 <tr>
                     <th scope="col" class="text-center"> N° Exp </th>
