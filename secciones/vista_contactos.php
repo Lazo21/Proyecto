@@ -52,7 +52,7 @@
                 <div class="mb-3">
                     <label for="" class="form-label">Email</label>
                     <input type="email" class="form-control" name="id" id="id" aria-describedby="helpId" placeholder="">
-                    <label for="" class="form-label">Email secundario</label>
+                    <label for="" class="form-label">Email Secundario</label>
                     <input type="email" class="form-control" name="id" id="id" aria-describedby="helpId" placeholder="">
                 </div>
 
