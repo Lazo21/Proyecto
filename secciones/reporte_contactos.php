@@ -218,7 +218,7 @@
     </div> -->
 
     <?php
-    include 'plantilla.php';
+    include '..secciones/plantilla.php';
     //require 'conexion.php';
 
    // $query="SELECT e.estado, m.id_municipio, m.municipio FROM t_municipio AS m INNER JOIN 
