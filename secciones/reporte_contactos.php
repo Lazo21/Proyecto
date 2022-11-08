@@ -213,17 +213,61 @@
     </nav>
 
 
-    <div class="container-fluid">
-
-    
+    <!-- <div class="container-fluid">
     <center><img src="../img/contactos.jpeg"/ width="1680" height="800" margin="auto" padding="600"></center>
+    </div> -->
+
+    <?php
+
+    require 'fpdf/fpdf.php';
+    require 'conexion.php';
+
+    class PDF extends FPDF
+    {
+
+     function Header()
+     {
+        $this->Image('img/logo8.png', 5, 5, 30);
+        $this->SetFont('Arial','B',15);
+        $this->Cell(30);
+        $this->Cell(120,10, 'Reporte De Contactos',0,0,'C');
+
+        $this->Ln(20);
+     }
+
+     function Footer()
+     {
+        $this->SetY(-15);
+        $this->SetFont('Arial','I', 8);
+        $this->Cell(0,10, 'Pagina ', $this->PageNo() .'/{nb}',0,0,'C' );
+     }
+
+    }
+
+    $query="SELECT e.estado, m.id_municipio, m.municipio FROM t_municipio AS m INNER JOIN 
+    t_estado AS e ON m.id_estado=e.id_estado";
+    $resultado = $mysqli->query($query);
+
+    $pdf = new PDF();
+    $pdf->AliasNbPages();
+    $pdf->AddPage();
+
+    $pdf->SetFillColor(232,232,232);
+    $pdf->SetFont('Arial','B',12);
+    $pdf->Cell(70,6,'Nombre',1,0,'C',1);
+    $pdf->Cell(70,6,'Correo',1,0,'C',1);
+    $pdf->Cell(70,6,'Correo 2',1,0,'C',1);
+    $pdf->Cell(50,6,'Teléfono',1,0,'C',1);
+    $pdf->Cell(70,6,'Nombre Contacto Emergencia',1,0,'C',1);
+    $pdf->Cell(70,6,'Correo Contacto Emergencia',1,0,'C',1);
+    $pdf->Cell(50,6,'Teléfono Contacto Emergencia',1,1,'C',1);
+
+    $pdf->Output();
+
+   ?>
 
 
 
-
-
-
-    </div>
 
     <h5><div class="card-footer fixed-bottom">Copyright 2022 © EMG Psicóloga. Todos los derechos reservados</div></h5>
 
