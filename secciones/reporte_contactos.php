@@ -219,7 +219,7 @@
 
     <?php 
 
-require('fpdf/fpdf.php');
+require('../fpdf/fpdf.php');
 
 class PDF extends FPDF
 {
