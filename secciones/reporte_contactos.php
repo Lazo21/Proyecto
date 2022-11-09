@@ -217,73 +217,70 @@
     <center><img src="../img/contactos.jpeg"/ width="1680" height="800" margin="auto" padding="600"></center>
     </div> -->
 
-<?php
-    (include 'secciones/plantilla.php');
-    //require 'conexion.php';
+    <?php 
 
-   // $query="SELECT e.estado, m.id_municipio, m.municipio FROM t_municipio AS m INNER JOIN 
-    //t_estado AS e ON m.id_estado=e.id_estado";
-    //$resultado = $mysqli->query($query);
+require('fpdf/fpdf.php');
 
-    $pdf = new PDF();
-    $pdf->AliasNbPages();
-    $pdf->AddPage();
-
-    $pdf->SetFillColor(232,232,232);
-    $pdf->SetFont('Arial','B',12);
-    $pdf->Cell(70,6,'Nombre',1,0,'C',1);
-    $pdf->Cell(70,6,'Correo',1,0,'C',1);
-    $pdf->Cell(70,6,'Correo 2',1,0,'C',1);
-    $pdf->Cell(50,6,'Teléfono',1,0,'C',1);
-    $pdf->Cell(70,6,'Nombre Contacto Emergencia',1,0,'C',1);
-    $pdf->Cell(70,6,'Correo Contacto Emergencia',1,0,'C',1);
-    $pdf->Cell(50,6,'Teléfono Contacto Emergencia',1,1,'C',1);
-
-    $pdf->Output();
-?>
-  
-
-
-
-//require('fpdf/fpdf.php');
-
-//class PDF extends FPDF
-//{
+class PDF extends FPDF
+{
 // Cabecera de página
-//function Header()
-//{
-    // Logo
-    //$this->Image('logo.png',10,8,33);
-    // Arial bold 15
-   // $this->SetFont('Arial','B',15);
-    // Movernos a la derecha
-   // $this->Cell(80);
-    // Título
-    //$this->Cell(30,10,'Title',1,0,'C');
-    // Salto de línea
-    //$this->Ln(20);
+function Header()
+{
+    $this->SetFont('Times','B',20);
+    $this->Image('img/logo8.png',0,0,70); //imagen(archivo, png/jpg || x,y,tamaño)
+    $this->setXY(60,15);
+    $this->Cell(100,8,'Reporte De Contactos',0,1,'C',0);
+    $this->Image('img/',150,10,35); //imagen(archivo, png/jpg || x,y,tamaño)
+    $this->Ln(40);
 }
 
 // Pie de página
-//function Footer()
-//{
+function Footer()
+{
     // Posición: a 1,5 cm del final
-  //  $this->SetY(-15);
+    $this->SetY(-15);
     // Arial italic 8
-   // $this->SetFont('Arial','I',8);
+    $this->SetFont('Arial','B',10);
     // Número de página
-    //$this->Cell(0,10,'Page '.$this->PageNo().'/{nb}',0,0,'C');
-//}
-//}
+    $this->Cell(170,10,'Todos los derechos reservados',0,0,'C',0);
+    $this->Cell(25,10,utf8_decode('Página ').$this->PageNo().'/{nb}',0,0,'C');
+}
+}
 
 // Creación del objeto de la clase heredada
-//$pdf = new PDF();
-//$pdf->AliasNbPages();
-//$pdf->AddPage();
-//$pdf->SetFont('Times','',12);
-//for($i=1;$i<=40;$i++)
-   // $pdf->Cell(0,10,'Imprimiendo línea número '.$i,0,1);
-//$pdf->Output();
+$pdf = new PDF();//hacemos una instancia de la clase
+$pdf->AliasNbPages();
+$pdf->AddPage();//añade l apagina / en blanco
+$pdf->SetMargins(10,10,10);
+$pdf->SetAutoPageBreak(true,20);//salto de pagina automatico
+$pdf->SetX(15);
+$pdf->SetFont('Helvetica','B',15);
+$pdf->Cell(10,8,'Nombre','B',0,'C',0);
+$pdf->Cell(60,8,'Correo','B',0,'C',0);
+$pdf->Cell(30,8,'Teléfono','B',0,'C',0);
+$pdf->Cell(35,8,'Nombre (C.E)','B',0,'C',0);
+$pdf->Cell(50,8,'Correo (C.E)','B',1,'C',0);
+$pdf->Cell(50,8,'Teléfono (C.E)','B',1,'C',0);
+
+$pdf->SetFillColor(233, 229, 235);//color de fondo rgb
+$pdf->SetDrawColor(61, 61, 61);//color de linea  rgb
+
+$pdf->SetFont('Arial','',12);
+for($i=1;$i<=50;$i++){
+    
+    $pdf->Ln(0.6);
+    $pdf->setX(15);
+$pdf->Cell(10,8,$i,'B',0,'C',1);
+$pdf->Cell(60,8,'Leche','B',0,'C',1);
+$pdf->Cell(30,8,'$'.'20','B',0,'C',1);
+$pdf->Cell(35,8,'2','B',0,'C',1);
+$pdf->Cell(50,8,'40','B',1,'C',1);
+
+}
+// cell(ancho, largo, contenido,borde?, salto de linea?)
+
+$pdf->Output();
+?>
 
 
 
