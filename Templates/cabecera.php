@@ -231,7 +231,7 @@
         </div>
     </nav>
      
-    <br><br>
+    
     <div class="container-fluid">
         <div class="Row">
             <div class="col-xxl-12">
