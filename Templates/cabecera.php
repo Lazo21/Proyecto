@@ -53,7 +53,7 @@
         </div>
     </nav> -->
 
-    <nav class="navbar navbar-expand-xxl|xl|lg|md|sm navbar-dark  " style="background-color: #2C3E50;">
+    <nav class="navbar navbar-expand-sm navbar-dark  fixed-top" style="background-color: #2C3E50;">
         <!-- <a class="navbar-brand" href="#">EMG Psicología</a> -->
         <a class="navbar-brand" href="index.php">
             <img src="../img/logo8.png" alt="Logo" style="width:60px;">
@@ -231,7 +231,7 @@
         </div>
     </nav>
      
-    <br><br><br><br>
+    <br><br>
     <div class="container-fluid">
         <div class="Row">
             <div class="col-xxl-12">
