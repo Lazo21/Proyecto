@@ -1,4 +1,3 @@
-<?php //include('../secciones/contactos.php'); ?>
 <?php include('../Templates/cabecera.php'); ?>
 
 
@@ -159,5 +158,5 @@ var DataTable = new DataTable(tabla,{
 });
 
 </script>
-
+<?php include('../secciones/contactos.php'); ?>
 <?php include('../Templates/pie.php'); ?>
