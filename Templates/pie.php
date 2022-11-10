@@ -4,7 +4,7 @@
             </div>
                </div>
               <br><br>
-               <h5><div class="card-footer fixed-bottom"> Copyright 2022 © EMG Psicóloga. Todos los derechos reservados</div></h5>
+               <center><h5><div class="card-footer fixed-bottom"> Copyright 2022 © EMG Psicóloga. Todos los derechos reservados</div></h5></center>
               
 <header>
     <!-- place navbar here -->
