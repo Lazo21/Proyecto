@@ -212,8 +212,8 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" fill="currentColor" class="bi bi-forward-fill" viewBox="0 0 16 16">
                     <path d="m9.77 12.11 4.012-2.953a.647.647 0 0 0 0-1.114L9.771 5.09a.644.644 0 0 0-.971.557V6.65H2v3.9h6.8v1.003c0 .505.545.808.97.557z"/>
                     </svg></a></li>
-    <!-- <li><a class="dropdown-item" href="#">Link 2</a></li>
-    <li><a class="dropdown-item" href="#">Link 3</a></li> -->
+                        <!-- <li><a class="dropdown-item" href="#">Link 2</a></li>
+                        <li><a class="dropdown-item" href="#">Link 3</a></li> -->
                 </ul>
             </div>
 
@@ -230,7 +230,8 @@
                             
         </div>
     </nav>
-
+     
+    <br><br><br><br>
     <div class="container-fluid">
         <div class="Row">
             <div class="col-xxl-12">
