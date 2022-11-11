@@ -102,12 +102,12 @@
 
 <div class="col-md-8"><br><br><br><br><br>
 
-<div class="container-fluid">
+    <div class="container-fluid">
 
-<center><img src="../img/logo8.png"/ width="650" height="650" margin="auto" padding="800"></center>
+      <center><img src="../img/logo8.png"/ width="650" height="650" margin="auto" padding="800"></center>
 
 
-</div>
+    </div>
 
 
 </div>

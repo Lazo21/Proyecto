@@ -219,7 +219,7 @@
 
     <?php 
 
-require('../fpdf/fpdf.php');
+require('fpdf/fpdf.php');
 
 class PDF extends FPDF
 {
@@ -227,10 +227,9 @@ class PDF extends FPDF
 function Header()
 {
     $this->SetFont('Times','B',20);
-    $this->Image('img/logo8.png',0,0,70); //imagen(archivo, png/jpg || x,y,tamaño)
+    $this->Image('../img/logo8.png',0,0,70); //imagen(archivo, png/jpg || x,y,tamaño)
     $this->setXY(60,15);
     $this->Cell(100,8,'Reporte De Contactos',0,1,'C',0);
-    $this->Image('img/',150,10,35); //imagen(archivo, png/jpg || x,y,tamaño)
     $this->Ln(40);
 }
 
@@ -274,6 +273,7 @@ $pdf->Cell(10,8,$i,'B',0,'C',1);
 $pdf->Cell(60,8,'Leche','B',0,'C',1);
 $pdf->Cell(30,8,'$'.'20','B',0,'C',1);
 $pdf->Cell(35,8,'2','B',0,'C',1);
+$pdf->Cell(50,8,'40','B',1,'C',1);
 $pdf->Cell(50,8,'40','B',1,'C',1);
 
 }
