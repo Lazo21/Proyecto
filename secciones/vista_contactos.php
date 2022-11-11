@@ -104,7 +104,7 @@
 
 <div class="container-fluid">
 
-<center><img src="../img/logo8.png"/ width="300" height="300" margin="auto" padding="800"> 
+<img src="../img/logo8.png"/ width="300" height="300" margin="auto" padding="800"> 
 
 
 </div>
