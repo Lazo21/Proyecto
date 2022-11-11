@@ -26,7 +26,7 @@
 
 
 
-<div class="col-md-3">
+<div class="col-md-4">
 <br><br><br><br>
 <center><h2>Control de Contactos</h2></center>
     <form action="" method="post">
@@ -100,7 +100,7 @@
 </div>
 
 
-<div class="col-md-9"><br><br><br>
+<div class="col-md-8"><br><br><br>
 
 <div class="container-fluid">
 
