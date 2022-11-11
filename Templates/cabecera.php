@@ -236,7 +236,8 @@
         <div class="Row">
             <div class="col-xxl-12">
                 <div class="row">
-                <!-- <div class="col-xxl-12"> -->
+                <div class="col-xxl-12">
+                  <div class="row">
 
 
 
