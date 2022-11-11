@@ -219,7 +219,7 @@
 
     <?php 
 
-require'../fpdf/fpdf.php';
+require '../fpdf/fpdf.php';
 
 class PDF extends FPDF
 {
@@ -268,7 +268,7 @@ $pdf->SetFont('Arial','',12);
 for($i=1;$i<=50;$i++){
     
     $pdf->Ln(0.6);
-    $pdf->setX(15);
+   
 $pdf->Cell(10,8,$i,'B',0,'C',1);
 $pdf->Cell(60,8,'Leche','B',0,'C',1);
 $pdf->Cell(30,8,'$'.'20','B',0,'C',1);
