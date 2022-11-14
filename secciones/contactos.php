@@ -7,9 +7,9 @@ print_r($_POST);
 
 $consulta=$conexionBD->prepare("SELECT * FROM contactos");
 $consulta->execute();
-$listaContactos=$consulta->fetchAll();
+$listacontactos=$consulta->fetchAll();
 
-print_r($listaContactos);
+print_r($listacontactos);
 
 
 ?>
