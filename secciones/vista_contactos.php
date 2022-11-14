@@ -1,5 +1,5 @@
 <?php include('../Templates/cabecera.php'); ?>
-
+<?php include('../secciones/contactos.php'); ?>
 
 
 <style>
@@ -180,5 +180,5 @@ var DataTable = new DataTable(tabla,{
 });
 
 </script>
-<?php include('../secciones/contactos.php'); ?>
+
 <?php include('../Templates/pie.php'); ?>
