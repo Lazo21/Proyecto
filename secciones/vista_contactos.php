@@ -1,5 +1,6 @@
-<?php include('../Templates/cabecera.php'); ?>
 <?php include('../secciones/contactos.php'); ?>
+<?php include('../Templates/cabecera.php'); ?>
+
 
 
 <style>
