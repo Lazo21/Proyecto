@@ -138,7 +138,7 @@
             </thead>
             <tbody>
                
-            <?php foreach($listaContactos as $contacto) { ?>
+            <?php foreach($listaContactos as $contacto){ ?>
                 <tr>
                     <td> <?php echo $contacto['Nombre']; ?> </td>
                     <td> <?php echo $contacto['Email']; ?> </td>
