@@ -28,7 +28,7 @@
 
 
 <div class="col-md-4">
-<br><br><br><br><br>
+<br><br><br><br><br><br>
 <center><h2>Control de Contactos</h2></center>
     <form action="" method="post">
         <div class="card">
@@ -65,7 +65,7 @@
 
                 <div class="mb-3">
                     <label for="nombre2" class="form-label">Nombre (Contacto de emergencia)</label>
-                    <input type="text" class="form-control" name="Nombre2" id="Nombre2" aria-describedby="helpId" placeholder="Nombre Contacto Emergencia">
+                    <input type="text" class="form-control" name="nombre2" id="nombre2" aria-describedby="helpId" placeholder="Nombre Contacto Emergencia">
                 </div>
 
                 <div class="mb-3">
